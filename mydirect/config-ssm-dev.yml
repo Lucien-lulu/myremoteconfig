@@ -1,0 +1,13 @@
+
+server:
+  port: 10002
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    url: jdbc:mysql://localhost:3306/qingming?characterEncoding=utf-8&serverTimezone=UTC
+    password:
+mybatis:
+  type-aliases-package: com.qf.j1902.pojo
+  mapper-locations: classpath:mapping/*.xml
